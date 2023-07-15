@@ -30,9 +30,9 @@ add_action('wp_enqueue_scripts', 'wpmini__enqueue_scripts');
 function wpmini__enqueue_scripts() {
 
 	$data = array(
-		'siteURL' => site_url()
+		'siteURL' => esc_url( site_url( '/' ) )
 	);
-	$data_inline = 'const wpminiData = ' . json_encode( $data );
+	$data_inline = 'const wpminiData = ' . wp_json_encode( $data );
 	$production_script_filename = 'production-script.js';
 
 	if ( strcmp( wp_get_environment_type(), 'staging' ) == 0 || strcmp( wp_get_environment_type(), 'production' ) == 0 ){
