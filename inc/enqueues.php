@@ -35,8 +35,7 @@ function wpmini__enqueue_scripts() {
 	$data_inline = 'const wpminiData = ' . json_encode( $data );
 	$production_script_filename = 'production-script.js';
 
-	if ( strcmp( wp_get_environment_type(), 'development' ) != 0
-		&& strcmp( wp_get_environment_type(), 'local' ) != 0 ){
+	if ( strcmp( wp_get_environment_type(), 'staging' ) == 0 || strcmp( wp_get_environment_type(), 'production' ) == 0 ){
 
 		$handle = 'wpmini-' . $production_script_filename;
 		wp_enqueue_script(
@@ -81,8 +80,7 @@ function wpmini__enqueue_styles() {
 
 	$production_style_filename = 'production-style.css';
 
-	if ( strcmp( wp_get_environment_type(), 'development' ) != 0
-		&& strcmp( wp_get_environment_type(), 'local' ) != 0 ){
+	if ( strcmp( wp_get_environment_type(), 'staging' ) == 0 || strcmp( wp_get_environment_type(), 'production' ) == 0 ){
 
 		wp_enqueue_style(
 			'wpmini-' . $production_style_filename,
