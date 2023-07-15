@@ -40,24 +40,24 @@ function wpmini__enqueue_scripts() {
 		$handle = 'wpmini-' . $production_script_filename;
 		wp_enqueue_script(
 			$handle,
-			get_stylesheet_directory_uri() . '/assets/' . $production_script_filename,
+			get_template_directory_uri() . '/assets/' . $production_script_filename,
 			array(),
-			filemtime( get_stylesheet_directory() . '/assets/' . $production_script_filename ),
+			filemtime( get_template_directory() . '/assets/' . $production_script_filename ),
 			true
 		);
 		wp_add_inline_script( $handle, $data_inline );
 
 	} else {
 
-		wpmini__concatene_files( get_stylesheet_directory() . '/assets/js/*.js', get_stylesheet_directory() . '/assets/' . $production_script_filename );
+		wpmini__concatene_files( get_template_directory() . '/assets/js/*.js', get_template_directory() . '/assets/' . $production_script_filename );
 
 		$handle = false;
-		foreach ( glob( get_stylesheet_directory() . '/assets/js/*.js' ) as $file){
+		foreach ( glob( get_template_directory() . '/assets/js/*.js' ) as $file){
 
 			$filename = substr( strrchr( $file, '/' ), 1 );
 			$handle = 'wpmini-' . $filename;
 
-			wp_enqueue_script( $handle, get_stylesheet_directory_uri() . '/assets/js/' . $filename, array(), false, true );
+			wp_enqueue_script( $handle, get_template_directory_uri() . '/assets/js/' . $filename, array(), false, true );
 
 		}
 
@@ -84,19 +84,19 @@ function wpmini__enqueue_styles() {
 
 		wp_enqueue_style(
 			'wpmini-' . $production_style_filename,
-			get_stylesheet_directory_uri() . '/assets/' . $production_style_filename,
+			get_template_directory_uri() . '/assets/' . $production_style_filename,
 			array(),
-			filemtime( get_stylesheet_directory() . '/assets/' . $production_style_filename )
+			filemtime( get_template_directory() . '/assets/' . $production_style_filename )
 		);
 
 	} else {
 
-		wpmini__concatene_files( get_stylesheet_directory() . '/assets/css/*.css', get_stylesheet_directory() . '/assets/' . $production_style_filename );
+		wpmini__concatene_files( get_template_directory() . '/assets/css/*.css', get_template_directory() . '/assets/' . $production_style_filename );
 
-		foreach ( glob( get_stylesheet_directory() . '/assets/css/*.css' ) as $file){
+		foreach ( glob( get_template_directory() . '/assets/css/*.css' ) as $file){
 
 			$filename = substr( strrchr( $file, '/' ), 1 );
-			wp_enqueue_style( 'wpmini-' . $filename, get_stylesheet_directory_uri() . '/assets/css/' . $filename, array(), false );
+			wp_enqueue_style( 'wpmini-' . $filename, get_template_directory_uri() . '/assets/css/' . $filename, array(), false );
 
 		}
 
