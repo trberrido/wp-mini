@@ -1,0 +1,45 @@
+{
+    "key": "group_65c6368bef624",
+    "title": "Block: demo wrapper",
+    "fields": [
+        {
+            "key": "field_65c6368c9ba82",
+            "label": "Demo wrapper",
+            "name": "wpmini__demo__block_wrapper",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "ACF default value",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "wpmini\/demo-wrapper"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1707490239
+}

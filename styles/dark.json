@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Dark",
+	"description": "dark version",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "var(--wp--custom--color--neutral--025)",
+					"name": "Text",
+					"slug": "contrast"
+				},
+				{
+					"color": "var(--wp--custom--color--neutral--075)",
+					"name": "Background",
+					"slug": "base"
+				},
+				{
+					"color": "var(--wp--custom--color--yellow)",
+					"name": "Primary",
+					"slug": "primary"
+				}
+			]
+		}
+	}
+}

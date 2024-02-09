@@ -1,0 +1,13 @@
+/*
+ * See inc/style.php
+ * 	- wpmini__register_block_styles()
+ *	- wpmini__blocks__enqueue_styles()
+*/
+
+p.is-style-highlighted {
+	border: 1px solid var(--wp--preset--color--primary);
+	border-left-width: var(--wp--preset--spacing--30);
+
+	margin: 0 var(--wp--preset--spacing--40);
+	padding: var(--wp--preset--spacing--40);
+}

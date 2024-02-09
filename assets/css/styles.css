@@ -1,0 +1,20 @@
+body::after {
+
+	content: ':)';
+	background-color: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	border-radius: 50%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 2rem;
+	height: 2rem;
+
+	position: absolute;
+	bottom: var(--wp--preset--spacing--40);
+	right: var(--wp--preset--spacing--40);
+	z-index: 999;
+
+}

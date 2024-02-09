@@ -1,10 +1,143 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
+	"description": "base template",
 	"settings": {
 		"custom": {
-			"color": {}
+			"color": {
+				"blue": "#0037BA",
+				"yellow": "#BAAE00",
+				"neutral": {
+					"025": "#FEFEFE",
+					"050": "#777777",
+					"075": "#0E0E0E"
+				},
+				"error": {
+					"025": "#F38C8C",
+					"050": "#E92B2B",
+					"075": "#730C0C"
+				},
+				"warning": {
+					"025": "#FDCC81",
+					"050": "#FCA729",
+					"075": "#7E4C02"
+				},
+				"success": {
+					"025": "#89F58E",
+					"050": "#0FB215",
+					"075": "#0A760E"
+				}
+			}
 		},
-		"color": {}
+		"useRootPaddingAwareAlignments": true,
+		"layout": {
+			"contentSize": "75rem",
+			"wideSize": "100rem"
+		},
+		"spacing": {
+			"customSpacingSize": false,
+			"spacingScale": {
+				"increment": 1.5,
+				"mediumStep": 1.5,
+				"operator": "*",
+				"unit": "rem",
+				"steps": 7
+			}
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Barlow",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": ["file:./assets/fonts/Barlow-Regular.ttf"]
+						},
+						{
+							"fontFamily": "Barlow",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": ["file:./assets/fonts/Barlow-SemiBold.ttf"]
+						}
+					],
+					"fontFamily": "\"Barlow\", sans-serif",
+					"name": "Barlow",
+					"slug": "base"
+				}
+			],
+			"customFontSize": false,
+			"fontSizes": [
+				{
+					"fluid": false,
+					"name": "Small",
+					"size": ".5rem",
+					"slug": "sm"
+				},
+				{
+					"fluid": false,
+					"name": "Medium small",
+					"size": ".75rem",
+					"slug": "md-sm"
+				},
+				{
+					"fluid": false,
+					"name": "Medium",
+					"size": "1rem",
+					"slug": "md"
+				},
+				{
+					"fluid": false,
+					"name": "Medium large",
+					"size": "2rem",
+					"slug": "md-lg"
+				},
+				{
+					"fluid": false,
+					"name": "Large",
+					"size": "4rem",
+					"slug": "lg"
+				}
+			]
+		},
+		"color": {
+			"custom": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "var(--wp--custom--color--neutral--075)",
+					"name": "Text",
+					"slug": "contrast"
+				},
+				{
+					"color": "var(--wp--custom--color--neutral--025)",
+					"name": "Background",
+					"slug": "base"
+				},
+				{
+					"color": "var(--wp--custom--color--blue)",
+					"name": "Primary",
+					"slug": "primary"
+				}
+			]
+		}
+	},
+	"styles": {
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--base)"
+		},
+		"color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--contrast)"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				}
+			}
+		}
 	}
 }

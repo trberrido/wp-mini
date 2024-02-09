@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "wpmini/demo-wrapper",
+	"title": "Wrapper demo",
+	"textdomain": "dw",
+	"icon": "editor-contract",
+	"description": "Wrap sub blocks and add a paragrah from an ACF field",
+	"keywords": [ "wrapper", "acf" ],
+	"version": "1.0.0",
+	"script": "wp-mini--demo-wrapper",
+	"style": "file:./style.css",
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "render.php",
+		"jsx": true
+	},
+	"example": { "attributes": { "mode": "preview" } }
+}
