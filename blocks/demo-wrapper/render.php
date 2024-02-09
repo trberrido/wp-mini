@@ -4,7 +4,7 @@
 // NB: in block.json:
 // { acf.jsx: true } enable the use of <InnerBlocks />
 
-// NB; a block as some interesting variables:
+// NB; a block has some interesting variables:
 // $block, $content, $is_preview, $post_id
 // https://www.advancedcustomfields.com/resources/acf_register_block_type/
 
