@@ -144,8 +144,8 @@ see more: https://developer.wordpress.org/reference/functions/wp_get_environment
 - WP coding standards: https://developer.wordpress.org/coding-standards/wordpress-coding-standards/
 - WP handbooks / docs: https://developer.wordpress.org/block-editor/getting-started/
 - FSE introduction: https://fullsiteediting.com/lessons/preparations-quick-start-guide/
+- Twentytwentyfour theme: https://github.com/WordPress/twentytwentyfour
 
 ### Misc
 - BEM: css classes naming methodology: https://getbem.com/
-- IBM carbon font https://carbondesignsystem.com/guidelines/typography/type-sets
 - DSFR https://www.systeme-de-design.gouv.fr/
