@@ -149,3 +149,9 @@ see more: https://developer.wordpress.org/reference/functions/wp_get_environment
 ### Misc
 - BEM: css classes naming methodology: https://getbem.com/
 - DSFR https://www.systeme-de-design.gouv.fr/
+
+## todo
+- rajouter template hierarchy
+- ACF field : get field + filter query
+- more infos about theme.json
+- theme.json file: add examples of style.someblock 
